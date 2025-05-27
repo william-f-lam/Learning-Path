@@ -42,7 +42,7 @@ def main():
                 if text.isdigit():
                     station_ids.append(text)
         except:
-            print("Failed to store view all station IDs.")
+            print("Failed to store all station IDs.")
         finally:
             browser.close()
 
