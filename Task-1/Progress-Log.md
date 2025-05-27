@@ -6,4 +6,4 @@
 **5/27/25**  
 - I generalized the process of viewing all the station IDs, by concatenating a special **string** at the end of the URL.
 - For extracting the station IDs, I had some help from ChatGPT to find all the clickable station links and scrape for the IDs to be stored in an **array**.
-- With this array of IDs, I've decided to track whether a station has truck flow or not by storing binary values in a **list** with station ID and paired binary value.
+- With this array of IDs, I've decided to track whether a station has truck flow or not by storing binary values in a **hashmap** with station IDs as keys and paired binary values, all stored inside an outer **list**.
