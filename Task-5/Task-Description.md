@@ -5,8 +5,8 @@ High Level Description:
 Low Level Description:  
 
 1. Read the file for California Census Tracts and convert to the WGS84 coordinate system.
+  - https://catalog.data.gov/dataset/tiger-line-shapefile-2021-state-california-census-tracts 
 2. Read the file for UCR UCR AI-Energy Nexus Laboratory dataset for trip and stop activities.
-   - https://catalog.data.gov/dataset/tiger-line-shapefile-2021-state-california-census-tracts 
 3. Iterate over CSV files from UCR dataset.
 4. For each CSV file, create spatial points from the given latitude longitude pair.
 5. Spatial join to see if the points are within California's shapefile, and map to appropriate GEOIDs, otherwise discard for Nevada points.
