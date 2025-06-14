@@ -10,6 +10,6 @@ Low Level Description:
 3. Iterate over CSV files from UCR dataset.
 4. For each CSV file, create spatial points from the given latitude longitude pair.
 5. Spatial join to see if the points are within California's shapefile, and map to appropriate GEOIDs, otherwise discard for Nevada points.
-6. For each origin GEOID and its destination GEOID, track its next destinations and increment a counter to those first and second destination GEOIDs.
+6. For each origin GEOID and its two following destination GEOIDs, track its next destinations and increment a counter to those first and second destination GEOIDs.
 7. Store results in JavaScript Object Notation (JSON), counting the number of times an OD pair GEOID visits a given destination GEOID.
 8. Given an input OD pair, provide the five most likely destinations based on JSON results.
